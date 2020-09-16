@@ -53,3 +53,21 @@ $('.product__item--cate').on('click',  function(event) {
     $(this).children('i').toggleClass('rotate');
 });
 
+$('.navbar-mobile').hide();
+$('.mobile-bar-icon').on('click', function() {
+    $('.navbar-mobile').slideToggle();
+    $(this).toggleClass('change');
+}); 
+
+$('.header__icon-search').on('click', function() {
+    $('.navbar-mobile').hide();
+    $('.mobile-bar-icon').removeClass('change');
+})
+
+$('.navbar-mobile-item').on('click', function() {
+    $(this).children('.navbar-mobile-submenu').slideToggle();
+    $(this).toggleClass('mobileMenuClicked');
+});
+
+
+

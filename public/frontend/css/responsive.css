@@ -1,89 +1,101 @@
- 
-/* Small devices (landscape phones, 576px and up) */
+/* PC */
 
-@media (min-width: 576px) {  
- 
-}
- 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
- 
-}
- 
-@media (min-width: 575px) and (max-width: 767) {  
+@media (min-width: 1024px) {
+	.navbar-mobile {
+		display: none !important;
+	}
 
 }
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
- .home-img-major{
- 	min-width: 300px;
- }
- .intro__branch{
- 	width: 320px;
- }
+
+
+/* Mobile & Tablet */
+
+@media (max-width: 1023px) {
+    
 }
- 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-    .home-img-major{
- 	min-width: unset;
- }
- .hidden-on-pc{
- 	display: none;
- }
+
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    
+
 }
-@media (max-width: 991px) {  
-     .hidden-on-tablet-mobi{
- 	display: none;
- }
- .logo__link{
- 	flex: 2;
- }
- .btn__bar{
- 	margin-left: 8px;
- }
- .form__input{
-		width: 400px;
-}
-	.prize img{
-		max-height: 200px;
-		width: 100%;
+
+
+/* Mobile */
+
+@media (max-width: 739px) {
+	.list__header,
+	.form__search,
+	.list__menu {
+		display: none;
 	}
- .list__menu .item__menu{
- 	width: calc(100%/3);
- 	
- }
- .intro__text{
- 	width: 100%;
- }
- 
- body{
- 	font-size: 0.8rem;
- }
- .home-img-major{
- 	min-width: unset;
- }
-}
-.page{
-	right: 4%;
-}
-.wrapper{
-	left: -17px;
-}
- 
- 
- 
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::::
-Custom media queries
-*/
- 
-/* Set width to make card deck cards 100% width */
-@media (max-width: 950px) { 
- 
-}
-@media (max-width: 575px){
-	.form__input{
-		width: 100%;
+
+	i.fas.fa-bars.hidden-on-pc.btn__bar {
+		display: block;
 	}
+
+	.home-branch {
+
+		font-size: 22px;
+	}
+
+	.ring {
+		display:none
+	}
+
+	.home-brand-details div {
+		font-size: 16px;
+		width:100%
+	}
+
+	.home-container.my-4 {
+		margin-top: 0px !important;
+	}
+
+	.intro {
+		display: none;
+	}
+
+	.slick-slide {
+		width: 100% !important;
+	}
+
+	.slick-track {
+		display: inline-flex;
+	}
+
+	.intro__branch {
+		font-size: 22px;
+		margin-top: 32px;
+		padding-top: 24px;
+	}
+
+	.home-news-title a {
+		font-size: 18px !important;
+	}
+
+	.mobile-bar-icon {
+		display: inline-block ;
+	}
+
+	.header__icon-search {
+		display: flex;
+		padding: 0 8px;
+		font-size: 30px;
+	}
+
+	.wrap__header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 88px;
+	}
+
+	.main {
+		margin-top: 88px;
+	}
+
 }

@@ -34,7 +34,7 @@
                   </div>
                   <!-- endslide -->
                   <br>
-                  <div class="container my-4">
+                  <div class="container my-4 home-container">
                     <div class="home-branch">
                       <i class="fas fa-angle-double-right"></i>
                       <span>TẦM NHÌN - SỨ MỆNH</span>
@@ -75,7 +75,7 @@
                       
                     </div> --}}
                     <div class="row">
-                      <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-4" data-aos="fade-down" data-aos-delay="50">
+                      <div class="col-md-3 col-sm-12" data-aos="fade-down" data-aos-delay="50">
                         <div class="intro-us">
                           <img src="{{asset('images/o1.png')}}" class="img-fluid" alt="">
                           <h3>Chuyên môn</h3>
@@ -83,21 +83,21 @@
                         </div>
                         
                       </div>
-                      <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-4" data-aos="fade-down" data-aos-delay="350">
+                      <div class="col-md-3 col-sm-12" data-aos="fade-down" data-aos-delay="350">
                         <div class="intro-us">
                           <img src="{{asset('images/o2.png')}}" class="img-fluid" alt="">
                           <h3>Uy tín nhất</h3>
                           <p>Uy tín được đặt lên hàng đầu, với 10 năm làm việc với hơn 3000 khách</p>
                         </div>
                       </div>
-                      <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-4" data-aos="fade-down" data-aos-delay="500">
+                      <div class="col-md-3 col-sm-12" data-aos="fade-down" data-aos-delay="500">
                         <div class="intro-us">
                           <img src="{{asset('images/o3.png')}}" class="img-fluid" alt="">
                           <h3>Chất lượng</h3>
                           <p>Chúng tôi gồm những kĩ sư giàu kinh nghiệm cũng như đội ngũ dồi dào nhiệt tình</p>
                         </div>
                       </div>
-                      <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-4" data-aos="fade-down" data-aos-delay="500">
+                      <div class="col-md-3 col-sm-12" data-aos="fade-down" data-aos-delay="500">
                         <div class="intro-us">
                           <img src="{{asset('images/o3.png')}}" class="img-fluid" alt="">
                           <h3>Chất lượng</h3>
@@ -118,13 +118,10 @@
                   </div>
                   <img class="img-fluid" src="https://thuthuatnhanh.com/wp-content/uploads/2018/07/hinh-nen-4k-thah-pho.jpg" alt="">
                 </div>
-            <br>
-            <br>
-            <br>
             <div class="intro__branch">CÁC SẢN PHẨM CHÚNG TÔI CUNG CẤP</div>
             <div class="container">
               <div class="row multiple-items">
-                <div class="col-lg-  ">
+                <div class="col-lg-12">
                   <a href="#" class="branch"> 
                     <div class="s-intro-label">Kinh doanh</div>
                     <img  class="img-fluid home-img-major" src="https://bytuong.com/wp-content/uploads/2017/08/12-kinh-nghiem-kinh-doanh-nam-nhat-bytuong-com-e1502964584292.jpg" alt="" >
@@ -194,37 +191,37 @@
             <div class="intro__branch">NHỮNG THÀNH TỰU CỦA CÔNG TY CHÚNG TÔI</div>
             <div class="container">
               <div class="row ">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+                <div class="col-md-4 mb-2">
                   <div class="prize">
                     <img class="img-fluid" src="{{ asset('images/achievement1.jpg') }}" alt="">
                     <p class="text-center"><b>Hội doanh nhân trẻ thành phố Đà Nẵng năm 2017</b></p>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+                <div class="col-md-4 mb-2">
                   <div class="prize">
                     <img class="img-fluid" src="{{ asset('images/achievement2.jpg') }}" alt="">
                     <p class="text-center"><b>Phòng thương mại và Công nghiệp Việt Nam</b></p>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+                <div class="col-md-4 mb-2">
                   <div class="prize">
                     <img class="img-fluid" src="{{ asset('images/achievement2.jpg') }}" alt="">
                     <p class="text-center"><b>Hội doanh nhân trẻ thành phố Đà Nẵng năm 2017</b></p>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+                <div class="col-md-4 mb-2">
                   <div class="prize">
                     <img class="img-fluid" src="{{ asset('images/achievement4.jpg') }}" alt="">
                     <p class="text-center"><b>Một số bằng khen tiêu biểu khác</b></p>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+                <div class="col-md-4 mb-2">
                   <div class="prize">
                     <img class="img-fluid" src="{{ asset('images/achievement3.jpg') }}" alt="">
                     <p class="text-center"><b>Tổng thầu phân phối miền Trung</b></p>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+                <div class="col-md-4 mb-2">
                   <div class="prize">
                     <img class="img-fluid" src="{{ asset('images/achievement5.jpg') }}" alt="">
                     <p class="text-center"><b>Thành viên Hội Mỹ nghệ và Chế biến gỗ thành phố Hồ Chí Minh</b></p>
@@ -236,10 +233,10 @@
               <div class="intro__branch">TIN TỨC</div>
               @foreach($news as $k=>$v)
                 <div class="row my-3">
-                  <div class="col-lg-3 col-md-3 col-sm-5 col-6 home-news-img-wrap">
+                  <div class="col-md-3 home-news-img-wrap">
                     <a href="#"><img src="{{asset($v->thumbnail_blog)}}" alt=""></a>
                   </div>
-                  <div class="col-lg-9 col-md-9 col-sm-7 col-6 home-news-details">
+                  <div class="col-md-9 home-news-details">
                     <div class="home-news-title">
                       <a href="{{URL::to('news/'.$v->slug)}}">{{$v->title_news}}</a>
                     </div>

@@ -12,6 +12,10 @@
 body {
     scroll-behavior: smooth;
 }
+
+.web {
+    overflow: hidden;
+}
 .intro-us{
     border-radius: 8px;
     box-shadow: 3px 4px 5px #ccc;
@@ -205,12 +209,12 @@ body {
     width: 20px;
 }
 .intro__branch{
-    margin-top: 32px;
+    margin-top: 60px;
     text-align: center;
     font-size: 1.6rem;
     position: relative;
     padding: 8px 0;
-    width: 300px;
+    width: 330px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -850,6 +854,7 @@ footer .images-gellary ul li:nth-child(3n) {
 
 .list__menu .item__menu:hover .product-submenu{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .product-submenu {
@@ -898,5 +903,176 @@ footer .images-gellary ul li:nth-child(3n) {
 .header-major--link-product:hover {
     text-decoration: none;
     color: var(--primary);
-
 }
+
+.hidden-on-pc.btn__bar {
+    display: none;
+    font-size: 1.6rem;
+}
+
+.mobile-bar-icon {
+    cursor: pointer ;
+    margin-left: 12px;
+    display: none;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 7px);
+    transform: rotate(-45deg) translate(-9px, 7px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -7px);
+    transform: rotate(45deg) translate(-8px, -7px);
+  }
+
+  .header__icon-search {
+        display: none;
+        align-items: center;
+        font-size: 25px;
+  }
+
+  .mobile-input-search-wrap {
+    display: none;
+    position: fixed;
+    height: 44px;
+    top: 88px;
+    right: 0;
+    left: 0;
+    border-radius: unset;
+    align-items: center;
+    justify-content: center;
+    box-shadow: unset;
+    background-color: var(--primary);
+    animation: searchFadeIn 0.3s linear;
+    z-index: 10;
+  }
+
+  @keyframes searchFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+  .mobile-input-search {
+    height: 70%;
+    width: 96%;
+    padding-left: 12px;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    color: #000;
+    border-top-left-radius: 15px 50%;
+    border-bottom-left-radius: 15px 50%;
+    border-top-right-radius: 15px 50%;
+    border-bottom-right-radius: 15px 50%;
+  }
+
+  .header__search {
+      display: flex;
+      align-items: center;
+      margin-right: 8px;
+  }
+
+  .header__icon-wrap {
+    display: flex;
+    align-items: center;
+  }
+  
+  label.search-icon-wrap {
+      margin-bottom: 0 !important;
+  }
+
+  .overlay-search {
+    position: fixed;
+    top: 88px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    animation: searchFadeIn 0.1s linear;
+  }
+
+  .check-to-open-search:checked~.overlay-search {
+        display: block;
+  }   
+
+  .check-to-open-search:checked~.mobile-input-search-wrap {
+      display: flex;
+  }
+
+  .carousel-indicators {
+      display: none;
+  }
+
+  .navbar-mobile {
+      position: fixed;
+      top: 88px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #fff;
+      border-top: 1px solid var(--primary);
+  }
+
+  .navbar-mobile-wrap {
+      width: 100%;
+      height: 100% ;
+      z-index: 10000;
+  }
+
+  .navbar-mobile-list {
+      padding: 12px;
+      list-style: none;
+      overflow: hidden;
+  }
+
+  .navbar-mobile-item__link {
+      color: #000;
+      font-weight: bold;
+      padding: 4px 0;
+      display: block;
+      text-align: center;
+  }
+
+  .navbar-mobile-item__link:hover {
+    text-decoration: none;
+    color: var(--primary);
+  }
+
+  .navbar-mobile-submenu {
+      display: none;
+      padding: 0 0 4px 0;
+      list-style: none;
+      border-bottom: 1px solid var(--primary);
+      border-left: 1px solid var(--primary);
+      border-right: 1px solid var(--primary);
+  }
+
+  .mobile-submenu__link {
+      color: #000;
+      font-size: 14px;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      padding: 4px 0;
+  }
+
+  .mobileMenuClicked {
+      font-size: 24px;
+      color: var(--primary)
+  }

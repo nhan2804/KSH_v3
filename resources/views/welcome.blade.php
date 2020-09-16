@@ -57,8 +57,99 @@
               <form class="form__search" action="">
                   <input placeholder="Nhập từ khóa để tìm kiếm" class="form__input" type="text" name="" id="">
                   <button class="form__submit"><i class="fas fa-search"></i></button>
-              </form>
-              <i class="fas fa-bars hidden-on-pc btn__bar" style="font-size: 1.3rem;"></i>
+			        </form>
+			  <div class="header-mobile d-flex aligns-items-center">
+					<div class="header__search">
+						<div class="header__icon-wrap">
+							<label for="check-search" class="search-icon-wrap">
+								<i class="fas fa-search header__icon header__icon-search"></i>
+							</label>
+							<input type="checkbox" id="check-search" hidden="" class="check-to-open-search">
+							<label for="check-search" class="overlay-search"></label>
+							<form class="mobile-input-search-wrap">
+								<input type="text" class="mobile-input-search" placeholder="Nhập nội dung tìm kiếm">
+							</form>
+						</div>
+					</div>
+					<div class="mobile-bar-icon">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+        </div>
+
+          </div>
+          <div class="navbar-mobile">
+              <div class="navbar-mobile-wrap">
+                <ul class="navbar-mobile-list">
+                  <li class="navbar-mobile-item">
+                    <a href="#" class="navbar-mobile-item__link">
+                      Trang chủ
+                    </a>
+                  </li>
+                  <li class="navbar-mobile-item">
+                    <a href="javascript:avoid(0)" class="navbar-mobile-item__link">
+                      Sản phẩm
+                    </a>
+                    <ul class="navbar-mobile-submenu">
+                      
+                      @foreach($all_cate_pro->where('type_cate',0) as $k=>$v)
+                        <li>
+                          <a href="" class="mobile-submenu__link">{{$v->name_cate}}</a>
+                        </li>
+                      @endforeach
+                    </ul>
+                  </li>
+                  <li class="navbar-mobile-item">
+                    <a href="javascript:avoid(0)" class="navbar-mobile-item__link">
+                      Các lĩnh vực
+                    </a>
+                    <ul class="navbar-mobile-submenu">
+                      <li>
+                        <a href="" class="mobile-submenu__link">Nội thất văn phòng, trường học</a>
+                      </li>
+                      <li>
+                        <a href="" class="mobile-submenu__link">Mặt hàng điện tử, điện lạnh</a>
+                      </li>
+                      <li>
+                        <a href="" class="mobile-submenu__link">Dịch vụ phát triển thị trường</a>
+                      </li>
+                      <li>
+                        <a href="" class="mobile-submenu__link">Phân phối bất động sản</a>
+                      </li>
+                      <li>
+                        <a href="" class="mobile-submenu__link">Phát triển thương hiệu, tư vấn chiến lược</a>
+                      </li>
+                      <li>
+                        <a href="" class="mobile-submenu__link">Giáo dục và đào tạo</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navbar-mobile-item">
+                    <a href="#" class="navbar-mobile-item__link">
+                      Tin tức
+                    </a>
+                  </li>
+                  <li class="navbar-mobile-item">
+                    <a href="#" class="navbar-mobile-item__link">
+                      Tư vấn khách hàng
+                    </a>
+                  </li>
+                  <li class="navbar-mobile-item">
+                    <a href="javascript:avoid(0)" class="navbar-mobile-item__link">
+                      Về KSH
+                    </a>
+                    <ul class="navbar-mobile-submenu">
+                      <li>
+                        <a href="{{ URL::to('introduce') }}" class="mobile-submenu__link">Giới thiệu chung</a>
+                      </li>
+                      <li>
+                        <a href="{{ URL::to('system-company') }}" class="mobile-submenu__link">Hệ thống công ty</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
           </div>
       </div>
         <div class="header">
@@ -94,7 +185,7 @@
                             </a>
                             <ul class="submenu p-0">
                                 <li>
-                                    <a href="https://www.xuanhoa.vn/" target="_blank" class="header-major__link">Nội Thất văn phòng, trường học</a>
+                                    <a href="https://www.xuanhoa.vn/" target="_blank" class="header-major__link">Nội thất văn phòng, trường học</a>
                                 </li>
                                 <li>
                                     <a href="https://www.xuanhoa.vn/" target="_blank" class="header-major__link">Mặt hàng điện tử, điện lạnh</a>
