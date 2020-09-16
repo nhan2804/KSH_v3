@@ -1,0 +1,9 @@
+.main__post{
+    padding: 12px 8px;
+    background: #ccc;
+    border-radius: 4px;
+}
+.ads_google{
+    box-shadow: 2px 3px 4px #ccc;
+    height: 200px;
+}

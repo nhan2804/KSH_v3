@@ -1,0 +1,121 @@
+.product-details-header a{
+    color: #000;
+}
+
+.product-details-header a:hover {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.product-details-header i {
+    padding: 0 4px;
+    font-size: 12px;
+}
+
+.product-details-body {
+    margin-top: 20px;
+}
+
+.d-product-body-img {
+    padding-bottom: 20px;
+}
+
+.d-product-img-show-wrap img {
+    width: 100%;
+    height: 500px;
+}
+
+.d-product-img-more__item img {
+    width: 100%;
+}
+
+
+.d-product-img-more-wrap {
+    margin-top: 12px;
+    align-items: center;
+}
+
+.d-product-img-more {
+    cursor: pointer;
+}
+
+.d-product-img-more:hover {
+    opacity: 0.5;
+}
+
+.d-product-body-details {
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+}
+
+.d-product-details-item {
+    max-height: 275px;
+    padding: 8px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 11;
+    overflow: hidden;
+}
+
+.d-product-contact-btn {
+    outline: none;
+    border: none;
+    background: url(https://www.xuanhoa.vn/wp-content/themes/caia/images/button.png) no-repeat right center #d2202f;
+    border-radius: 5px;
+
+}
+
+.d-product-contact-btn a {
+    display: block;
+    padding: 8px 16px;
+    padding-right: 70px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.d-product-contact-btn a:hover {
+    text-decoration: none;
+}
+
+.d-product-more {
+    margin-top: 50px;
+}
+
+.d-product-more-header {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--primary);
+    margin-bottom: 32px;
+}
+
+.d-product-more-img-wrap {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 12px 0;
+}
+
+.d-product-more-img {
+    width: 100%;
+    border: 1.6px solid #000;
+}
+
+.d-product-more-details {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 17%;
+    background: rgba(198, 14, 30, 0.8);
+    color: #fff;
+    padding-left: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transform: translateY(35%);
+    transition: all 0.2s linear;
+}
+
+.d-product-more-img-wrap:hover .d-product-more-details {
+    transform: translateY(0%);
+}

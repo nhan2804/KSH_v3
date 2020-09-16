@@ -1,0 +1,89 @@
+ 
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {  
+ 
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+ 
+}
+ 
+@media (min-width: 575px) and (max-width: 767) {  
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ .home-img-major{
+ 	min-width: 300px;
+ }
+ .intro__branch{
+ 	width: 320px;
+ }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .home-img-major{
+ 	min-width: unset;
+ }
+ .hidden-on-pc{
+ 	display: none;
+ }
+}
+@media (max-width: 991px) {  
+     .hidden-on-tablet-mobi{
+ 	display: none;
+ }
+ .logo__link{
+ 	flex: 2;
+ }
+ .btn__bar{
+ 	margin-left: 8px;
+ }
+ .form__input{
+		width: 400px;
+}
+	.prize img{
+		max-height: 200px;
+		width: 100%;
+	}
+ .list__menu .item__menu{
+ 	width: calc(100%/3);
+ 	
+ }
+ .intro__text{
+ 	width: 100%;
+ }
+ 
+ body{
+ 	font-size: 0.8rem;
+ }
+ .home-img-major{
+ 	min-width: unset;
+ }
+}
+.page{
+	right: 4%;
+}
+.wrapper{
+	left: -17px;
+}
+ 
+ 
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+ 
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+ 
+}
+@media (max-width: 575px){
+	.form__input{
+		width: 100%;
+	}
+}
