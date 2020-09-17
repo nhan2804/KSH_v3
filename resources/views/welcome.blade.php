@@ -145,7 +145,7 @@
                         <a href="{{ URL::to('introduce') }}" class="mobile-submenu__link">Giới thiệu chung</a>
                       </li>
                       <li>
-                        <a href="{{ URL::to('system-company')}}" class="mobile-submenu__link">Hệ thống công ty</a>
+                        <a href="{{ URL::to('system-company') }}" class="mobile-submenu__link">Hệ thống công ty</a>
                       </li>
                     </ul>
                   </li>
