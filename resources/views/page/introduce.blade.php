@@ -1,11 +1,11 @@
 @extends('welcome')
 @section('title','Mang đến cho bạn niềm tin')
 @section('content')
-<div class="g-intro-main container">
+<div class="g-intro-main main container">
     <div class="row">
       <div class="g-intro-header col-sm-12">
-        KSH<br>
-        Key of success and happiness
+        <div>KSH</div>
+        <span>Key of success and happiness</span>
       </div>
     </div>
     <div class="row">

@@ -58,10 +58,10 @@
                             <div class="d-product-more-infor">
                                 {{$v->name_pro}}
                             </div>
-                            <div class="d-product-more-infor">
+                            <div class="d-product-more-infor d-product-more-infor--mobile">
                                 Kích thước: D2000 - R1600 - C1110<br>
                             </div>
-                            <div class="d-product-more-infor">
+                            <div class="d-product-more-infor d-product-more-infor--mobile">
                                 Tình trạng: Còn hàng
                             </div>
                             

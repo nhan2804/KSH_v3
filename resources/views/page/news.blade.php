@@ -33,17 +33,19 @@
         </div> --}}
         <div class="col-lg-4 col-md-12 col-12">
             <div class="row">
-            <h3 class="col-12">TIN MỚI NHẤT</h3>
+            <h3 class="col-sm-12 news-big-label">TIN MỚI NHẤT</h3>
             @foreach($news as $k=>$v)
-            <div class=" col-lg-12 col-md-6 col-6">
+            <div class=" col-sm-12">
                 <div class="news-left">
                 <div class="row">
                 <h6 class="news-left-title col-12"><a href="{{URL::to('news/'.$v->slug)}}" class="">{{$v->title_news}}</a></h6>
-                
-                    <div class="col-4 news-left-img">
-                        <img style="width: 100%;height: 70px" src="{{asset($v->thumbnail_blog)}}" alt="">
+                    <div class="col-sm-4 news-left-img">
+                        <a href="{{URL::to('news/'.$v->slug)}}">
+                            <img src="{{asset($v->thumbnail_blog)}}" alt="">
+                        </a>
                     </div>
-                    <div class="col-8">
+                <h6 class="news-left-title news-left-title--mobile col-12"><a href="{{URL::to('news/'.$v->slug)}}" class="">{{$v->title_news}}</a></h6>
+                    <div class="col-sm-8">
                         <div class="news__curr--desc">
                             <p>{{$v->desc_news}}</p>
                         </div>
@@ -56,16 +58,16 @@
         </div>
         <div class="col-lg-8 col-md-12 col-12">
             <div class="row ">
-            <h3 class="col-12">CHỦ ĐỀ</h3>
+            <h3 class="col-12 hide-on-mobile">CHỦ ĐỀ</h3>
             @foreach($pros as $k=>$v)
             <h3 class="col-12 col-lg-12" style="padding-left: 4px; color: var(--primary); font-weight:bold;">{{$v['name_cate']}}</h3>
             @foreach($v['products'] as $k1=>$v1)
-            <a href="{{URL::to('news/'.$v1->slug)}}" class="col-6 col-lg-6 news-achievement">
+            <a href="{{URL::to('news/'.$v1->slug)}}" class="col-sm-6 news-achievement">
                 <div class="row">
-                    <div class="col-lg-7 gutter-6">
-                        <img style="width: 100%;height: 130px" src="{{asset($v1->thumbnail_blog)}}" alt="">
+                    <div class="col-sm-7 gutter-6">
+                        <img src="{{asset($v1->thumbnail_blog)}}" alt="" class="news-achievement-img">
                     </div>
-                    <div class="col-lg-5 gutter-6">
+                    <div class="col-sm-5 gutter-6">
                         <div class="news-news__curr--info">
                             <div class="news-achievement-title">{{$v1->title_news}}</div>
                         </div>

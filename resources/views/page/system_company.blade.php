@@ -1,14 +1,14 @@
 @extends('welcome')
 @section('title','Mang đến cho bạn niềm tin')
 @section('content')
-<div class="g-intro-main container">
+<div class="g-intro-main main container">
     <div class="row">
       <div class="g-intro-header col-sm-12">
         KSH - KHẲNG ĐỊNH SỰ KHÁC BIỆT
       </div>
     </div>
     <div class="row">
-      <div class="g-intro-header col-sm-12" style="font-size: 20px;">
+      <div class="g-intro-header col-sm-12 g-intro-header--mobile">
         Triển khai dịch vụ phát triển hệ thống phân phối cho các Công ty
       </div>
     </div>

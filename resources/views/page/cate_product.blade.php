@@ -2,7 +2,7 @@
 @section('title','')
 @section('content')
 <br>
-<div class="container">
+<div class="container main">
 	<div class="row">
 		<div class="col-lg-3">
 			<form action="{{URL::to('product/search')}}" class="product__form--search">

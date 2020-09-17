@@ -3,7 +3,7 @@
 @section('content')
 <div class="main container">
     <section class="mb-4">
-        <h2 class="h1-responsive font-weight-bold text-center my-4">Liên hệ với chúng tôi</h2>
+        <h2 class="contact-title">Liên hệ với chúng tôi</h2>
         <!--Section description-->
         <p class="text-center w-responsive mx-auto mb-5">Bạn có câu hỏi nào không? Xin đừng ngần ngại liên hệ trực tiếp với chúng tôi. Chúng tôi sẽ quay lại với bạn trong vòng vài giờ để giúp bạn.</p>
 
@@ -52,7 +52,7 @@
             <!--Grid column-->
 
             <!--Grid column-->
-            <div class="col-md-6 text-center">
+            <div class="col-md-6 hide-on-mobile text-center">
                 <img class="img-fluid" src="images/contact.png" alt="">
             </div>
             <!--Grid column-->

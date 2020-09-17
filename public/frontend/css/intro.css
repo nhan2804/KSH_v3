@@ -23,6 +23,11 @@
 	text-transform: uppercase;
 }
 
+.g-intro-header--mobile {
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
 .g-intro-2-wrap {
 	width: 50%;
 	margin-top: 20px;

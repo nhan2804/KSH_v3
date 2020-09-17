@@ -3,7 +3,7 @@
 @section('content')
 <div class="main container">
 	<div class="row mt-4 mb-2">
-                <div class="col-lg-9">
+                <div class="col-sm-9">
                     <div class="main-post-title">
                       {{$data->title_news}}
                     </div>
@@ -14,7 +14,7 @@
                         {!! html_entity_decode($data->content_news) !!}
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-3 main-post-advertisement">
                   Quảng cáo ở đây
                 </div>
             </div>

@@ -26,6 +26,10 @@
 /* Mobile */
 
 @media (max-width: 739px) {
+	.page {
+		display: none !important;
+	}
+
 	.list__header,
 	.form__search,
 	.list__menu {
@@ -98,4 +102,144 @@
 		margin-top: 88px;
 	}
 
+	.product__heading--cate,
+	.product__list--cate {
+		display: none;
+	}
+
+	.mobile-product__heading--cate {
+		display: block;
+	}
+
+	.product-news {
+		display: none;
+	}
+
+	.wrap__product img {
+		width: 100%;
+		height: auto;
+	}
+
+	.product-title--mobile {
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	.d-product-img-show-wrap img {
+		display: none;
+	}
+
+	.d-product-img-more__item img {
+		border: none !important;
+	}
+
+	.d-product-contact-btn {
+		margin: 8px 0;
+	}
+
+	.d-product-more-details {
+		transform: translateY(0);
+	}
+
+	.d-product-more-details {
+		height: 20%;
+		display: flex;
+		align-items: center;
+		justify-content:center;
+	}
+
+	.d-product-more-infor {
+		font-size: 15px;
+	}
+
+	.d-product-more-infor--mobile {
+		display:none;
+	}
+
+	.hide-on-mobile {
+		display: none;
+	}
+
+	.news-big-label {
+		color: var(--primary);
+	}
+
+	.news-left-title a {
+		color: #000;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 1;
+		overflow: hidden;
+	}
+
+	.news-left-img img {
+		height: auto;
+	}
+
+	.news-left-title {
+		display: none;
+	}
+
+	.news-left-title--mobile {
+		display: block;
+		margin-top: 8px;
+	}
+
+	.news-left { 
+		margin-bottom: 12px;
+	}
+
+	.news__curr--desc p {
+		margin-bottom: 0 ;
+	}
+
+	.news-achievement-img {
+		height: auto;
+		width: 100%;
+	}
+
+	.main-post-title {
+		margin-top: 24px;
+	}
+
+	.contact-title {
+		margin-top: 0;
+		padding-top: 24px;
+	}
+
+	.g-intro-header {
+		font-size: 24px;
+		margin-bottom: 16px;
+		margin-top: 8px;
+	}
+
+	.g-intro-header span {
+		font-size: 16px;
+	}
+
+	.g-intro-2-wrap {
+		width: 100%;
+	}
+
+	.g-intro-2-item-head {
+		font-size: 18px;
+	}
+
+	.g-intro-header--mobile {
+		font-size: 18px;
+		margin-bottom: 0;
+	}
+
+	.s-intro-img {
+		height: auto;
+	}
+
+	.s-intro-img-2 {
+		width: 100%;
+		height: auto;
+	}
+
+	.breadcrumb {
+		margin-top: 100px !important;
+	}
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KSH | @yield('title')</title>
 
-	  <link rel="icon" type="image" href="images/logo.jpg"/>
+    <link rel="shortcut icon" href="{{ asset('images/logo.jpg') }}" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
     <link rel="stylesheet" href="{{asset('frontend/css/home.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/news.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/contact.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/intro.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/product.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('frontend/css/product_details.css')}}">
@@ -83,7 +84,7 @@
               <div class="navbar-mobile-wrap">
                 <ul class="navbar-mobile-list">
                   <li class="navbar-mobile-item">
-                    <a href="#" class="navbar-mobile-item__link">
+                    <a href="{{ URL::to('/') }}" class="navbar-mobile-item__link">
                       Trang chủ
                     </a>
                   </li>
@@ -126,12 +127,12 @@
                     </ul>
                   </li>
                   <li class="navbar-mobile-item">
-                    <a href="#" class="navbar-mobile-item__link">
+                    <a href="{{ URL::to('/news') }}" class="navbar-mobile-item__link">
                       Tin tức
                     </a>
                   </li>
                   <li class="navbar-mobile-item">
-                    <a href="#" class="navbar-mobile-item__link">
+                    <a href="{{ URL::to('/contact') }}" class="navbar-mobile-item__link">
                       Tư vấn khách hàng
                     </a>
                   </li>

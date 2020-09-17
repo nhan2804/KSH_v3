@@ -111,8 +111,13 @@
 	color: #000;
 }
 
-.news-left:hover .news-left-title {
+.news-left-title a {
+	color: #000;
+}
+
+.news-left:hover .news-left-title a {
 	color: var(--primary);
+	text-decoration: none !important;
 }
 
 .news__curr--desc {
@@ -128,6 +133,11 @@
 
 .gutter-6.news-left-img {
 	padding-left: 0 !important;
+}
+
+.news-left-img img {
+	width: 100%;
+	height: 70px;
 }
 
 .news-achievement-title {
@@ -152,4 +162,13 @@
 .news-achievement:hover .news-achievement-title {
 	color: var(--primary);
 
+}
+
+.news-left-title--mobile {
+	display: none;
+}
+
+.news-achievement-img {
+	width: 100%;
+	height: 130px;
 }

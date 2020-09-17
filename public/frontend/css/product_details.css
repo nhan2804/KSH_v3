@@ -106,13 +106,13 @@
     left: 0;
     bottom: 0;
     right: 0;
-    height: 17%;
+    height: 40%;
     background: rgba(198, 14, 30, 0.8);
     color: #fff;
     padding-left: 8px;
     font-size: 16px;
     font-weight: bold;
-    transform: translateY(35%);
+    transform: translateY(60%);
     transition: all 0.2s linear;
 }
 
