@@ -15,12 +15,14 @@
 				<li class="product__item--cate"><a class="product__link--cate" href="#">All</a></li>
 				@foreach($cate->where('parent_id',$cate_first->parent_id) as $k=>$v)
 				<li class="product__item--cate"><a class="product__link--cate" href="#">{{$v->name_cate}}</a><i class="fas fa-angle-right arrow_menu"></i>
+					<ul class="cate_menu_sub">
 				@foreach($cate->where('parent_id',$v->id_cate) as $k1=>$v1)
-				<ul class="cate_menu_sub">
+				
 				    <li><a href="{{URL::to('product/danh-muc/'.$v1->slug_cate)}}">{{$v1->name_cate}}</a></li>
+				    @endforeach
 				</ul>
 				</li>
-				@endforeach
+				
 				@endforeach
 				
 			</ul>
