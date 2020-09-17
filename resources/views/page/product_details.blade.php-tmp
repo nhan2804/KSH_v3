@@ -30,14 +30,19 @@
                 <div class="col-sm-5 d-product-body-details">
                     <div class="d-product-details-item"><b>Tên sản phẩm:</b> {{$pro->name_pro}}</div>
                     <div class="d-product-details-item"><b>Mô tả: </br></b> {!! $pro->detail_pro !!} </div>
-
+                    <div class="d-product-details-item"><b>Kích thước: </br></b>{{$pro->size_pro}} </div>
+                    <div class="d-product-details-item"><b>Giá bán lẻ: </br></b> {{number_format($pro->price)}}vnđ </div>
                     <div class="d-product-details-item">
                         <button class="d-product-contact-btn">
                             <a href="">Mua ngay</a>
                         </button>
+                        <button class="d-product-contact-btn">
+                            <a href="">Thanh toán online</a>
+                        </button>
                     </div>
                 </div>
             </div>
+            {{$pro->detailplus_pro}}
         </div>
 
         <div class="d-product-more">

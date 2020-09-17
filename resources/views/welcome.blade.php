@@ -95,7 +95,7 @@
                       
                       @foreach($all_cate_pro->where('type_cate',0) as $k=>$v)
                         <li>
-                          <a href="" class="mobile-submenu__link">{{$v->name_cate}}</a>
+                          <a href="{{URL::to('product/danh-muc/'.$v->slug_cate)}}" class="mobile-submenu__link">{{$v->name_cate}}</a>
                         </li>
                       @endforeach
                     </ul>

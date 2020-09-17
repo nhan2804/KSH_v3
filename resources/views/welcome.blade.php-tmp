@@ -20,6 +20,33 @@
     <link rel="stylesheet" type="text/css" href="{{asset('frontend/css/responsive.css')}}">
 </head>
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v8.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+ js.id = id;
+
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="101947048311801"
+  logged_in_greeting="Chào bạn, chúng tôi có thể giúp gì được cho  bạn?"
+  logged_out_greeting="Chào bạn, chúng tôi có thể giúp gì được cho  bạn?">
+      </div>
     <div class="web">
         <div class="wrap__header pt-1 pb-1 sticky__pined">
           <div class="container header__section1">
@@ -32,8 +59,99 @@
               <form class="form__search" action="">
                   <input placeholder="Nhập từ khóa để tìm kiếm" class="form__input" type="text" name="" id="">
                   <button class="form__submit"><i class="fas fa-search"></i></button>
-              </form>
-              <i class="fas fa-bars hidden-on-pc btn__bar" style="font-size: 1.3rem;"></i>
+			        </form>
+			  <div class="header-mobile d-flex aligns-items-center">
+					<div class="header__search">
+						<div class="header__icon-wrap">
+							<label for="check-search" class="search-icon-wrap">
+								<i class="fas fa-search header__icon header__icon-search"></i>
+							</label>
+							<input type="checkbox" id="check-search" hidden="" class="check-to-open-search">
+							<label for="check-search" class="overlay-search"></label>
+							<form class="mobile-input-search-wrap">
+								<input type="text" class="mobile-input-search" placeholder="Nhập nội dung tìm kiếm">
+							</form>
+						</div>
+					</div>
+					<div class="mobile-bar-icon">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+        </div>
+
+          </div>
+          <div class="navbar-mobile">
+              <div class="navbar-mobile-wrap">
+                <ul class="navbar-mobile-list">
+                  <li class="navbar-mobile-item">
+                    <a href="#" class="navbar-mobile-item__link">
+                      Trang chủ
+                    </a>
+                  </li>
+                  <li class="navbar-mobile-item">
+                    <a href="javascript:avoid(0)" class="navbar-mobile-item__link">
+                      Sản phẩm
+                    </a>
+                    <ul class="navbar-mobile-submenu">
+
+                      @foreach($all_cate_pro->where('type_cate',0) as $k=>$v)
+                        <li>
+                          <a href="{{URL::to('product/danh-muc/'.$v->slug_cate)}}" class="mobile-submenu__link">{{$v->name_cate}}</a>
+                        </li>
+                      @endforeach
+                    </ul>
+                  </li>
+                  <li class="navbar-mobile-item">
+                    <a href="javascript:avoid(0)" class="navbar-mobile-item__link">
+                      Các lĩnh vực
+                    </a>
+                    <ul class="navbar-mobile-submenu">
+                      <li>
+                        <a href="" class="mobile-submenu__link">Nội thất văn phòng, trường học</a>
+                      </li>
+                      <li>
+                        <a href="" class="mobile-submenu__link">Mặt hàng điện tử, điện lạnh</a>
+                      </li>
+                      <li>
+                        <a href="" class="mobile-submenu__link">Dịch vụ phát triển thị trường</a>
+                      </li>
+                      <li>
+                        <a href="" class="mobile-submenu__link">Phân phối bất động sản</a>
+                      </li>
+                      <li>
+                        <a href="" class="mobile-submenu__link">Phát triển thương hiệu, tư vấn chiến lược</a>
+                      </li>
+                      <li>
+                        <a href="" class="mobile-submenu__link">Giáo dục và đào tạo</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navbar-mobile-item">
+                    <a href="#" class="navbar-mobile-item__link">
+                      Tin tức
+                    </a>
+                  </li>
+                  <li class="navbar-mobile-item">
+                    <a href="#" class="navbar-mobile-item__link">
+                      Tư vấn khách hàng
+                    </a>
+                  </li>
+                  <li class="navbar-mobile-item">
+                    <a href="javascript:avoid(0)" class="navbar-mobile-item__link">
+                      Về KSH
+                    </a>
+                    <ul class="navbar-mobile-submenu">
+                      <li>
+                        <a href="{{ URL::to('introduce') }}" class="mobile-submenu__link">Giới thiệu chung</a>
+                      </li>
+                      <li>
+                        <a href="{{ URL::to('system-company') }}" class="mobile-submenu__link">Hệ thống công ty</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
           </div>
       </div>
         <div class="header">
@@ -55,7 +173,7 @@
                               @foreach($all_cate_pro->where('parent_id',$v->id_cate) as $k1=>$v1)
                                 <ul class="product-submenu-item">
                                   <li>
-                                    <a href="{{'product/danh-muc/'.$v1->slug_cate}}" target="_blank" class="header-major--link-product">{{$v1->name_cate}}</a>
+                                    <a href="{{URL::to('product/danh-muc/'.$v1->slug_cate)}}" target="_blank" class="header-major--link-product">{{$v1->name_cate}}</a>
                                   </li>
                                 </ul>
                                 @endforeach
@@ -69,7 +187,7 @@
                             </a>
                             <ul class="submenu p-0">
                                 <li>
-                                    <a href="https://www.xuanhoa.vn/" target="_blank" class="header-major__link">Nội Thất văn phòng, trường học</a>
+                                    <a href="https://www.xuanhoa.vn/" target="_blank" class="header-major__link">Nội thất văn phòng, trường học</a>
                                 </li>
                                 <li>
                                     <a href="https://www.xuanhoa.vn/" target="_blank" class="header-major__link">Mặt hàng điện tử, điện lạnh</a>

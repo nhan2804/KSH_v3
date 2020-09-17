@@ -104,7 +104,6 @@
                 type : 1
             },
             success : function (data) {
-            	console.log(data);
                 $('.parent_add_cate').removeClass('hidden');
                 $('.parent_add_cate select').html(data);
                 $('#parent_id').val($('.parent_add_cate select').val());
@@ -115,6 +114,9 @@
             }
         });
     }else if($('#formaddcate #checkbox_cate3:checked').prop('checked')==true){
+    	// $('#formaddcate #checkbox_cate2').click();
+    	// console.log();
+    	callCate3($('#cate_parent').val());
     	$('body').on('change', '#cate_parent', function(event) {
     		$('#type').val('2');
 		$.ajax({
@@ -136,6 +138,9 @@
         });
 	});
     }
+
+
+
     $('body').on('change', '#cate_parent', function(event) {
         $('#parent_id').val($(this).val());
 	});
@@ -143,5 +148,24 @@
         $('#parent_id').val($(this).val());
 	});
 });
+	function callCate3(id) {
+		$.ajax({
+            url: 'product/loadcate1',
+            type: 'POST',
+            data: {
+                type : 2,
+                id_cate:id
+            },
+            success : function (data) {
+                $('.parent_add_all').removeClass('hidden');
+                $('.parent_add_all select').html(data);
+                $('#parent_id').val($('.parent_add_all select').val());
+            },
+            error : function () {
+                $('.parent_add_cate').removeClass('hidden');
+                $('.parent_add_cate select').html("Đã có lỗi xảy ra, vui lòng thử lại sau.");
+            }
+        });
+	}
 </script>
 @endsection

@@ -52,12 +52,13 @@
                         </div>
                         <div class="form-group col-md-12">
                             <label>Mô tả thêm (có thể có)</label>
-                            <textarea required id="" name="detailpusl_pro" class="form-control edit_post">
+                            <textarea required id="" name="detailplus_pro" class="form-control edit_post">
                             </textarea>
                         </div>
                         <div class="form-group col-md-12">
                             <label>Chọn loại</label>
                             <select class="form-control" name="cate_1" id="cate_id_1">
+                                <option value="0">--Vui Lòng chọn Danh mục</option>  
                                 @foreach($data as $k=>$v)
                                 <option value="{{$v->id_cate}}">{{$v->name_cate}}</option>  
                                 @endforeach 
@@ -130,6 +131,20 @@
             },
             success:function (data) {
                 $('#cate_child').html(data);
+                $id_cate = $('#cate_child').val();
+                $.ajax({
+                url: 'cate-parent',
+                type: 'POST',
+                data: {
+                    parent_id: $id_cate,
+                },
+                success:function (data) {
+                    $('#cate_child2').html(data);
+                },
+                error:function () {
+                   alert("errro");
+                }
+            })
             },
             error:function () {
                alert("errro");

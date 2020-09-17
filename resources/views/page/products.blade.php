@@ -41,10 +41,6 @@
 				<div class="col-lg-6 col-md-6 col-sm-12 col-12 mb-4">
 					<div class="wrap__product">
 						<img class="img-fluid" style="width: 100%" src="{{asset($v->url_img)}}" alt="">
-						<div>
-							<i class="far fa-clock">May 04, 2020  |  </i>
-							<i class="fas fa-eye"></i>201
-						</div>
 						<h4 class="product__title">{{$v->name_pro}}</h4>
 						<p class="product__desc">{!!$v->desc_pro!!} </p>
 						<a href="{{ URL::to('product/'.$v->slug_pro) }}" class="btn__primary btn--buy">Xem chi tiết</a>
